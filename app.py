@@ -1,4 +1,4 @@
-# Employee Salary Prediction App (Cleaned, concise, and error-free)
+# Employee Salary Prediction App 
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -37,7 +37,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- Main Page Inputs (One by One, with Inline Explanations) ---
+
 st.markdown("### 👤 Employee Details")
 with st.form("salary_form"):
     age = st.number_input("Age (years)", 17, 90, 30)
@@ -61,7 +61,7 @@ with st.form("salary_form"):
     gender = st.selectbox("Gender", gender_classes)
     hours_per_week = st.number_input("Hours per week (Average)", 1, 100, 40)
 
-    # Hidden/sensible defaults
+    
     fnlwgt = 100000
     marital_status = marital_status_classes[0]
     relationship = relationship_classes[0]
